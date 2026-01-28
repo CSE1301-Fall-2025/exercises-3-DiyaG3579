@@ -5,7 +5,7 @@ class Rectangle
     private int length;
     private int width;
 
-    public Rectangle()
+    public Rectangle() //Just in case the user forgets to insert values
     {  
        length = 1;
        width = 1;
@@ -26,6 +26,5 @@ class Rectangle
           System.out.println();
       }
       System.out.println();
-    }
-
+   }
 }

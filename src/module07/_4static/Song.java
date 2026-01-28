@@ -3,8 +3,11 @@ package module07._4static;
 public class Song 
 { 
 
+  public static int verseCount = 0;
   //add a static variable to count how many times the verse method is called
-
+  public static void verseCounter(){
+    System.out.println("Verses: " + verseCount);
+  }
 
   //update the method to increment the counter
   public static void verse(String animal, String noise) 
@@ -19,17 +22,16 @@ public class Song
     System.out.println( "Everywhere a " + noise + "-" + noise );
     System.out.println( "Old MacDonald had a farm" );
     System.out.println( "E-I-E-I-O" );
+    verseCount++;
   }
 
   public static void main(String[] args) 
   {
     verse( "cow" , "moo" );
     verse( "duck" , "quack" );
-    //add a few more verses
+    verse("pig", "oink");
+    verse("frog", "ribbit");
     
-
-    //print the counter value
-
-
+    verseCounter();
   }
 }

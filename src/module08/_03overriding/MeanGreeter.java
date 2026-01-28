@@ -4,6 +4,6 @@ public class MeanGreeter extends Greeter
 {
 	public String greet()
 	{
-		return "Go Away";
+		return "Go Away Loser";
 	}
 }
